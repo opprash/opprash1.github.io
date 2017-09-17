@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | opprash</title>
+  <title>Virtualization monitoring process | opprash</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="I am always stay here,That&apos;s why I could konw who I am!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="opprash">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+  <meta name="description" content="With the popularity of cloud computing, virtual machine introspection techniques and tools are increasingly being used to monitor the behavior of virtual machines in the IaaS cloud. With the help of t">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Virtualization monitoring process">
+<meta property="og:url" content="http://yoursite.com/2017/09/17/new 4/index.html">
 <meta property="og:site_name" content="opprash">
-<meta property="og:description" content="I am always stay here,That&apos;s why I could konw who I am!">
+<meta property="og:description" content="With the popularity of cloud computing, virtual machine introspection techniques and tools are increasingly being used to monitor the behavior of virtual machines in the IaaS cloud. With the help of t">
 <meta property="og:locale" content="Chinese&English">
+<meta property="og:updated_time" content="2017-09-17T09:03:02.960Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="opprash">
-<meta name="twitter:description" content="I am always stay here,That&apos;s why I could konw who I am!">
+<meta name="twitter:title" content="Virtualization monitoring process">
+<meta name="twitter:description" content="With the popularity of cloud computing, virtual machine introspection techniques and tools are increasingly being used to monitor the behavior of virtual machines in the IaaS cloud. With the help of t">
   
     <link rel="alternative" href="/atom.xml" title="opprash" type="application/atom+xml">
   
@@ -157,76 +158,164 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-new 4" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Virtualization monitoring process
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/17/new 4/" class="archive-article-date">
+
+        
+        <a href="/2017/09/17/new 4/" class="archive-article-date">
   	<time datetime="2017-09-17T09:03:02.957Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-17</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/17/new 4/">Virtualization monitoring process</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>With the popularity of cloud computing, virtual machine introspection techniques and tools are increasingly being used to monitor the behavior of virtual machines in the IaaS cloud. With the help of these technologies, many applications can be installed outside the virtual machine, but also can provide services for the virtual machine, such as security monitoring software, virus detection software. But the technology must overcome a problem, the semantic gap: the management program can see the city state and their virtual machine within the expression of the semantic separation. This article focuses on the use of introspection technology to monitor the kernel process and the days of stepping on the various pit.</p>
+<h2 id="Introduction-Doc"><a href="#Introduction-Doc" class="headerlink" title="Introduction Doc"></a>Introduction Doc</h2><h3 id="install-xen-on-the-ubuntu"><a href="#install-xen-on-the-ubuntu" class="headerlink" title="install xen on the ubuntu"></a>install xen on the ubuntu</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install virt-manager</div></pre></td></tr></table></figure>
+<p>Site of docu: <a href="https://xenserver.org/" target="_blank" rel="external">sites</a></p>
+<h3 id="The-virtual-machine-is-created-to-run"><a href="#The-virtual-machine-is-created-to-run" class="headerlink" title="The virtual machine is created to run"></a>The virtual machine is created to run</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ There is no need <span class="keyword">for</span> instructions here, as to download ubuntu system</div></pre></td></tr></table></figure>
+<p>More info: <a href="http://www.ubuntu.org.cn/index_kylin" target="_blank" rel="external">Ubantu</a></p>
+<h3 id="libvim-variant-installation"><a href="#libvim-variant-installation" class="headerlink" title="libvim variant installation"></a>libvim variant installation</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libglib2.0-dev</div><div class="line">sudo apt-get install check</div><div class="line">./autogen.sh</div><div class="line">./configure</div><div class="line">make</div><div class="line">The way of init libvim:</div><div class="line">su -</div><div class="line">make install</div><div class="line">ldconfig</div><div class="line"><span class="built_in">exit</span></div></pre></td></tr></table></figure>
+<p>More info: As each person’s computer situation is different, the installation process has different problems, welcome to ask, I will solve for everyone!<br>More info: <a href="http://libvmi.com/" target="_blank" rel="external">libvim</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Formula: * p = p-pid;</div></pre></td></tr></table></figure>
+<p>More info: According to the various versions of the operating system data structure Xie wrote the main function of the module and Makfile file<br>Formula: * p = p-pid;<br>Also perform a file to view the kernel data structure of the various defined macros as well as the operation<br>More info: <a href="http://blog.csdn.net/geekcome/article/details/6196044" target="_blank" rel="external">site</a></p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/17/new 4/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/13/hello-world/" class="archive-article-date">
-  	<time datetime="2017-09-13T06:04:39.929Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-13</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/09/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/13/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -249,8 +338,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
