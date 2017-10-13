@@ -2,9 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/09/23/new7/</loc>
+    
+    <lastmod>2017-10-13T17:17:09.333Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/09/18/new5/</loc>
+    
+    <lastmod>2017-10-13T17:16:43.635Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/10/13/new%2011/</loc>
+    
+    <lastmod>2017-10-13T17:16:19.880Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/10/10/new%2010/</loc>
+    
+    <lastmod>2017-10-13T17:15:32.703Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/10/06/new%209/</loc>
+    
+    <lastmod>2017-10-13T17:15:06.494Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/09/28/new%208/</loc>
+    
+    <lastmod>2017-10-13T17:14:33.887Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/09/19/new%206/</loc>
     
-    <lastmod>2017-10-13T17:02:54.540Z</lastmod>
+    <lastmod>2017-10-13T17:13:59.472Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/09/17/new%204/</loc>
+    
+    <lastmod>2017-10-13T17:13:32.482Z</lastmod>
     
   </url>
   
@@ -19,55 +68,6 @@
     <loc>http://yoursite.com/photos/data.json</loc>
     
     <lastmod>2017-10-13T16:15:09.118Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/09/23/new7/</loc>
-    
-    <lastmod>2017-10-13T15:52:43.033Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/09/18/new5/</loc>
-    
-    <lastmod>2017-10-13T15:52:19.843Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/10/13/new%2011/</loc>
-    
-    <lastmod>2017-10-13T15:52:06.010Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/10/10/new%2010/</loc>
-    
-    <lastmod>2017-10-13T15:51:49.128Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/10/06/new%209/</loc>
-    
-    <lastmod>2017-10-13T15:51:29.780Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/09/28/new%208/</loc>
-    
-    <lastmod>2017-10-13T15:50:58.446Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/09/17/new%204/</loc>
-    
-    <lastmod>2017-10-13T15:50:18.960Z</lastmod>
     
   </url>
   
