@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | opprash</title>
+  <title>Vita | opprash</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="I am always stay here,That&apos;s why I could konw who I am!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="opprash">
-<meta property="og:url" content="http://yoursite.com/archives/2017/page/2/index.html">
+  <meta name="description" content="java实现快速map、hashmap的快速查找算法及map学习！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vita">
+<meta property="og:url" content="http://yoursite.com/2017/11/05/new 19/index.html">
 <meta property="og:site_name" content="opprash">
-<meta property="og:description" content="I am always stay here,That&apos;s why I could konw who I am!">
+<meta property="og:description" content="java实现快速map、hashmap的快速查找算法及map学习！">
 <meta property="og:locale" content="Chinese&English">
+<meta property="og:updated_time" content="2017-11-05T02:49:56.768Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="opprash">
-<meta name="twitter:description" content="I am always stay here,That&apos;s why I could konw who I am!">
+<meta name="twitter:title" content="Vita">
+<meta name="twitter:description" content="java实现快速map、hashmap的快速查找算法及map学习！">
   
     <link rel="alternative" href="/atom.xml" title="opprash" type="application/atom+xml">
   
@@ -167,160 +168,195 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-new 19" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Vita
+    </h1>
+  
+
+		
+		<!-- 显示阅读和评论数 -->
+
+		
+		
+        
+        <a href="/2017/11/05/new 19/" class="archive-article-date">
+  	<time datetime="2017-11-05T02:49:56.768Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-05</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <script src="\assets\js\APlayer.min.js"> </script><p>java实现快速map、hashmap的快速查找算法及map学习！<br><a id="more"></a></p>
+<h2 id="The-JAVA-study-of-today"><a href="#The-JAVA-study-of-today" class="headerlink" title="The JAVA study of today!"></a>The JAVA study of today!</h2><h3 id="Java实现小数的四舍五入"><a href="#Java实现小数的四舍五入" class="headerlink" title="Java实现小数的四舍五入"></a>Java实现小数的四舍五入</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">package study;</div><div class="line">import java.lang.String;</div><div class="line">public class sswr &#123;</div><div class="line"></div><div class="line">	/**</div><div class="line">	 * @param args</div><div class="line">	 */</div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		double d=3.1415926;</div><div class="line">		String s1=String .format(<span class="string">"%.2f"</span>,d);</div><div class="line">		String s2=String.format(<span class="string">"%.3f"</span>, d);</div><div class="line">		System.out.println(s1);</div><div class="line">		System.out.println(s2);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Java实现Map与hushmap的排序实现复杂度最低"><a href="#Java实现Map与hushmap的排序实现复杂度最低" class="headerlink" title="Java实现Map与hushmap的排序实现复杂度最低"></a>Java实现Map与hushmap的排序实现复杂度最低</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div></pre></td><td class="code"><pre><div class="line">package study;</div><div class="line">import java.util.*;  </div><div class="line">import java.util.Map.Entry;  </div><div class="line">  </div><div class="line">public class T4 &#123;  </div><div class="line">    public static void main(String[] args) &#123;  </div><div class="line">        Map&lt;Integer, Integer&gt; map = new HashMap&lt;Integer, Integer&gt;();  </div><div class="line">        Scanner sc = new Scanner(System.in);  </div><div class="line">        int num = sc.nextInt();  </div><div class="line">        <span class="keyword">for</span> (int i = 0; i &lt; num; i++) &#123;  </div><div class="line">            int key = sc.nextInt();  </div><div class="line">            int value = sc.nextInt();  </div><div class="line">            <span class="keyword">if</span> (map.containsKey(key)) &#123;  </div><div class="line">                map.put(key, map.get(key) + value);  </div><div class="line">            &#125; <span class="keyword">else</span> &#123;  </div><div class="line">                map.put(key, value);  </div><div class="line">            &#125;  </div><div class="line">        &#125;  </div><div class="line">  </div><div class="line">        Iterator sIterator = map.entrySet().iterator();  </div><div class="line">        <span class="keyword">while</span> (sIterator.hasNext()) &#123;  </div><div class="line">            Map.Entry&lt;Integer, Integer&gt; sEntry = (Entry&lt;Integer, Integer&gt;) sIterator.next();  </div><div class="line">            System.out.println(sEntry.getKey() + <span class="string">" "</span> + sEntry.getValue());  </div><div class="line">        &#125;  </div><div class="line">  </div><div class="line">    &#125;  </div><div class="line">&#125;  </div><div class="line"><span class="comment">### Java实现二分查找和递归二分查找</span></div><div class="line">```bash</div><div class="line">package study;</div><div class="line">import java.util.Arrays;</div><div class="line">public class binarySearch &#123;</div><div class="line">	public static int binarysearch(int [] array,int des)//使用二分法查找</div><div class="line">	&#123;</div><div class="line">		int low=0;</div><div class="line">		int high=array.length-1;</div><div class="line">		<span class="keyword">while</span>(low&lt;high)</div><div class="line">		&#123;</div><div class="line">			int middle=(low+high)/2;</div><div class="line">			<span class="keyword">if</span>(des==array[middle])</div><div class="line">				<span class="built_in">return</span> middle;</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(des&lt;array[middle])</div><div class="line">			&#123;</div><div class="line">				high=middle-1;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">else</span></div><div class="line">			&#123;</div><div class="line">				low=middle+1;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		<span class="built_in">return</span> -1;</div><div class="line">	&#125;</div><div class="line">	public static int search(int [] array,int low,int high,int des)</div><div class="line">	&#123;</div><div class="line">		<span class="keyword">if</span>(low&lt;high)</div><div class="line">		&#123;</div><div class="line">			int middle=(high+low)/2;</div><div class="line">			</div><div class="line">			<span class="keyword">if</span>(des==array[middle])</div><div class="line">			&#123;</div><div class="line">				<span class="built_in">return</span> array[middle];</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(des&lt;array[middle])</div><div class="line">			&#123;</div><div class="line">				<span class="built_in">return</span> search(array,low,middle-1,des);</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">else</span></div><div class="line">			&#123;</div><div class="line">				<span class="built_in">return</span> search(array,middle+1,high,des);</div><div class="line">			&#125;</div><div class="line">			</div><div class="line">		&#125;</div><div class="line">		<span class="built_in">return</span> -1;</div><div class="line">	&#125;</div><div class="line">	/**</div><div class="line">	 * @param args</div><div class="line">	 */</div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		int srcArray[] = &#123; 1, 25, 24, 12, 69, 2, 2, 4 &#125;;  </div><div class="line">        Arrays.sort(srcArray);  </div><div class="line">        <span class="keyword">for</span>(int i=0;i&lt;srcArray.length;i++)</div><div class="line">        &#123;</div><div class="line">        	System.out.print(srcArray[i]+<span class="string">" "</span>);</div><div class="line">        &#125;</div><div class="line">        System.out.println();</div><div class="line">        System.out.println(search(srcArray, 0, srcArray.length, 12));  </div><div class="line">        System.out.println(binarysearch(srcArray, 0)); </div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="java实现快速排序"><a href="#java实现快速排序" class="headerlink" title="java实现快速排序"></a>java实现快速排序</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div></pre></td><td class="code"><pre><div class="line">package study;</div><div class="line"></div><div class="line">public class sort &#123;</div><div class="line">	public void swap(int[] array,int index1,int index2 )</div><div class="line">	&#123;</div><div class="line">		int temp;</div><div class="line">		temp=array[index1];</div><div class="line">		array[index1]=array[index2];</div><div class="line">		array[index2]=temp;</div><div class="line">	&#125;</div><div class="line">	private int PivotIndex(int[] v, int first, int last)  </div><div class="line">	&#123;  </div><div class="line">	    <span class="keyword">if</span> (last == first)  </div><div class="line">	    &#123;  </div><div class="line">	        <span class="built_in">return</span> last;  </div><div class="line">	    &#125;  </div><div class="line">	    <span class="keyword">if</span> (last - first == 1)  </div><div class="line">	    &#123;  </div><div class="line">	        <span class="built_in">return</span> first;  </div><div class="line">	    &#125;  </div><div class="line">	    int mid = (first + last) / 2;  </div><div class="line">	    int midVal = v[mid];   </div><div class="line">	    swap(v, first, mid);  </div><div class="line">	    int scanA = first + 1;  </div><div class="line">	    int scanB = last - 1;  </div><div class="line">	    <span class="keyword">for</span> (; ; )  </div><div class="line">	    &#123;  </div><div class="line">	        <span class="keyword">while</span> (scanA &lt;= scanB &amp;&amp; v[scanA] &lt; midVal)  </div><div class="line">	        &#123;  </div><div class="line">	            scanA++;  </div><div class="line">	        &#125;  </div><div class="line">	        <span class="keyword">while</span> (scanB &gt; first &amp;&amp; midVal &lt;= v[scanB])  </div><div class="line">	        &#123;  </div><div class="line">	            scanB--;  </div><div class="line">	        &#125;  </div><div class="line">	        <span class="keyword">if</span> (scanA &gt;= scanB)  </div><div class="line">	        &#123;  </div><div class="line">	            <span class="built_in">break</span>;  </div><div class="line">	        &#125;  </div><div class="line">	        swap(v, scanA, scanB);  </div><div class="line">	        scanA++;  </div><div class="line">	        scanB--;  </div><div class="line">	    &#125;  </div><div class="line">	    swap(v, first, scanB);  </div><div class="line">	    <span class="built_in">return</span> scanB;  </div><div class="line">	   </div><div class="line">	&#125;  </div><div class="line">	public void FastSort(int[] v, int first, int last) //快速排序 </div><div class="line">	&#123;  </div><div class="line">	    <span class="keyword">if</span> (last - first &lt;= 1)  </div><div class="line">	    &#123;  </div><div class="line">	        <span class="built_in">return</span>;  </div><div class="line">	    &#125;  </div><div class="line">	    <span class="keyword">if</span> (last - first == 2)  </div><div class="line">	    &#123;  </div><div class="line">	        //Sub-table contains two elements  </div><div class="line">	        <span class="keyword">if</span> (v[first] &gt; v[last - 1])  </div><div class="line">	        &#123;  </div><div class="line">	            swap(v, first, last - 1);  </div><div class="line">	        &#125;  </div><div class="line">	        <span class="built_in">return</span>;  </div><div class="line">	    &#125;  </div><div class="line">	    <span class="keyword">else</span>  </div><div class="line">	    &#123;  </div><div class="line">	        int pivotIndex = PivotIndex(v, first, last);  </div><div class="line">	        FastSort(v, first, pivotIndex);  </div><div class="line">	        FastSort(v, pivotIndex + 1, last);  </div><div class="line">	    &#125;  </div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	</div><div class="line"></div><div class="line">	/**</div><div class="line">	 * @param args</div><div class="line">	 */</div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line"></div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="map学习"><a href="#map学习" class="headerlink" title="map学习"></a>map学习</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div></pre></td><td class="code"><pre><div class="line">package study;</div><div class="line">/*</div><div class="line">map集合的两种取出方式：</div><div class="line">1，Set&lt;k&gt; keySet：将map中所有的键存入到Set集合。因为<span class="built_in">set</span>具备迭代器。</div><div class="line">    所有可以迭代方式取出所有的键，在根据get方法。获取每一个键对应的值。</div><div class="line">    Map集合的取出原理：将map集合转成<span class="built_in">set</span>集合。在通过迭代器取出。</div><div class="line">2，Set&lt;Map.Entry&lt;k,v&gt;&gt; entrySet：将map集合中的映射关系存入到了<span class="built_in">set</span>集合中，</div><div class="line">                而这个关系的数据类型就是：Map.Entry</div><div class="line">                Entry其实就是Map中的一个static内部接口。</div><div class="line">                为什么要定义在内部呢？</div><div class="line">                因为只有有了Map集合，有了键值对，才会有键值的映射关系。</div><div class="line">                关系属于Map集合中的一个内部事物。</div><div class="line">                而且该事物在直接访问Map集合中的元素。</div><div class="line">*/</div><div class="line">import java.util.*;</div><div class="line">public class MapDemo2&#123;</div><div class="line">    public static void main(String[] args) </div><div class="line">    &#123;</div><div class="line">        Map&lt;String,String&gt; map = new HashMap&lt;String,String&gt;();</div><div class="line">        map.put(<span class="string">"02"</span>,<span class="string">"zhangsan2"</span>);</div><div class="line">        map.put(<span class="string">"03"</span>,<span class="string">"zhangsan3"</span>);</div><div class="line">        map.put(<span class="string">"01"</span>,<span class="string">"zhangsan1"</span>);</div><div class="line">        map.put(<span class="string">"04"</span>,<span class="string">"zhangsan4"</span>);</div><div class="line">        //将Map集合中的映射关系取出。存入到Set集合中。</div><div class="line">        Set&lt;Map.Entry&lt;String,String&gt;&gt; entrySet = map.entrySet();</div><div class="line">        Iterator&lt;Map.Entry&lt;String,String&gt;&gt; it = entrySet.iterator();</div><div class="line">        <span class="keyword">while</span>(it.hasNext())</div><div class="line">        &#123;</div><div class="line">            Map.Entry&lt;String,String&gt; me = it.next();</div><div class="line">            String key = me.getKey();</div><div class="line">            String value = me.getValue();</div><div class="line"></div><div class="line">            System.out.println(key+<span class="string">":"</span>+value);</div><div class="line"></div><div class="line">        &#125;</div><div class="line">        /*</div><div class="line">        //先获取map集合的所有键的Set集合,keySet();</div><div class="line">        Set&lt;String&gt; keySet = map.keySet();</div><div class="line">        //有了Set集合。就可以获取其迭代器。</div><div class="line">        Iterator&lt;String&gt; it = keySet.iterator();</div><div class="line">        <span class="keyword">while</span>(it.hasNext())</div><div class="line">        &#123;</div><div class="line">            String key = it.next();</div><div class="line">            //有了键可以通过map集合的get方法获取其对应的值。</div><div class="line">            String value  = map.get(key);</div><div class="line">            System.out.println(<span class="string">"key:"</span>+key+<span class="string">",value:"</span>+value);</div><div class="line">        &#125;</div><div class="line">        */</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">/*</div><div class="line">Map.Entry 其实Entry也是一个接口，它是Map接口中的一个内部接口。</div><div class="line">interface Map</div><div class="line">&#123;</div><div class="line">    public static interface Entry</div><div class="line">    &#123;</div><div class="line">        public abstract Object getKey();</div><div class="line">        public abstract Object getValue();</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">class HashMap implements Map</div><div class="line">&#123;</div><div class="line">    class Hahs implements Map.Entry</div><div class="line">    &#123;</div><div class="line">        public  Object <span class="function"><span class="title">getKey</span></span>()&#123;&#125;</div><div class="line">        public  Object <span class="function"><span class="title">getValue</span></span>()&#123;&#125;</div><div class="line">    &#125;   </div><div class="line">&#125;</div><div class="line">*/</div></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/23/new7/" class="archive-article-date">
-  	<time datetime="2017-09-23T10:52:34.421Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/23/new7/">The study of how to solve rookitd record!</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/11/05/new 19/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/19/new 6/" class="archive-article-date">
-  	<time datetime="2017-09-19T00:59:26.197Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-19</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/10/24/new 18/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">LR(1)语法分析器的实现</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/19/new 6/">What is the relationship gap?</a>
-    </h1>
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="new 19" data-title="Vita" data-url="http://yoursite.com/2017/11/05/new 19/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "http://yoursite.com/2017/11/05/new 19/", 
+    sourceId: "new 19",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/18/new5/" class="archive-article-date">
-  	<time datetime="2017-09-18T10:59:07.781Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/18/new5/">Pocess</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/17/new 4/" class="archive-article-date">
-  	<time datetime="2017-09-17T09:03:02.957Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/17/new 4/">Virtualization monitoring process</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/13/hello-world/" class="archive-article-date">
-  	<time datetime="2017-09-13T06:04:39.929Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/13/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2017/">&laquo; Prev</a><a class="page-number" href="/archives/2017/">1</a><span class="page-number current">2</span>
-    </nav>
   
 
 
@@ -352,8 +388,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
